@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@include font-face( Roobert, '~/assets/fonts/Roobert-Medium', 500, medium, otf);
+@include font-face( Roobert, '~/assets/fonts/Roobert-Regular', 400, normal, otf);
+@include font-face( Roobert, '~/assets/fonts/Roobert-SemiBold', 650, semibold, otf);
+@include font-face( Roobert, '~/assets/fonts/Roobert-Bold', 750, bold, otf);
