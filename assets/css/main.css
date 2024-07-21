@@ -2,7 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-@include font-face( Roobert, '~/assets/fonts/Roobert-Medium', 500, medium, otf);
-@include font-face( Roobert, '~/assets/fonts/Roobert-Regular', 400, normal, otf);
-@include font-face( Roobert, '~/assets/fonts/Roobert-SemiBold', 650, semibold, otf);
-@include font-face( Roobert, '~/assets/fonts/Roobert-Bold', 750, bold, otf);
+@include font-face( Roobert, '~/assets/fonts/Roobert/Roobert-Medium', 500, medium, otf);
+@include font-face( Roobert, '~/assets/fonts/Roobert/Roobert-Regular', 400, normal, otf);
+@include font-face( Roobert, '~/assets/fonts/Roobert/Roobert-SemiBold', 650, semibold, otf);
+@include font-face( Roobert, '~/assets/fonts/Roobert/Roobert-Bold', 750, bold, otf);
+
+@include font-face( DM Serif Display, '~/assets/fonts/DM Serif Display/DMSerifDisplay-Italic', 400, serif, ttf);
+@include font-face( DM Serif Display, '~/assets/fonts/DM Serif Display/DMSerifDisplay-Regular', 400, serif, ttf);
+
+@include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-Regular', 400, mono, otf);
+@include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-Italic', 400, mono, otf);
+@include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-SemiBold', 600, mono, otf);
+@include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-SemiBoldItalic', 600, mono, otf);
+@include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-Bold', 800, mono, otf);
+@include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-BoldItalic', 800, mono, otf);
+@include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-Light', 200, mono, otf);
+@include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-LightItalic', 200, mono, otf);
+@include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-SemiLight', 300, mono, otf);
+@include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-SemiLightItalic', 300, mono, otf);
+@include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-ExtraLight', 100, mono, otf);
+@include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-ExtraLightItalic', 100, mono, otf);

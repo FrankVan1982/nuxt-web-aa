@@ -11,9 +11,9 @@ module.exports = {
   theme: {
 	fontFamily: {
       sans: ["Roobert"],
-      serif: ["Roobert"],
-      mono: ["Roobert"],
-      display: ["Roobert"],
+      serif: ["DM Serif Display"],
+      mono: ["Cascadia Code"],
+      display: ["DM Serif Display"],
       body: ["Roobert"]
     },  
     extend: {},
