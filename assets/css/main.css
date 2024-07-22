@@ -2,27 +2,165 @@
 @tailwind components;
 @tailwind utilities;
 
-@include font-face( Roobert, '~/assets/fonts/Roobert/Roobert-Medium', 500, medium, otf);
-@include font-face( Roobert, '~/assets/fonts/Roobert/Roobert-Regular', 400, normal, otf);
-@include font-face( Roobert, '~/assets/fonts/Roobert/Roobert-SemiBold', 650, semibold, otf);
-@include font-face( Roobert, '~/assets/fonts/Roobert/Roobert-Bold', 750, bold, otf);
+/* Correct font-face */
 
-@include font-face( DM Serif Display, '~/assets/fonts/DM Serif Display/DMSerifDisplay-Italic', 400, serif, ttf);
-@include font-face( DM Serif Display, '~/assets/fonts/DM Serif Display/DMSerifDisplay-Regular', 400, serif, ttf);
+@font-face {
+  font-family: 'Roobert';
+  src: url('/assets/fonts/Roobert/Roobert-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 
-@include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-Regular', 400, mono, otf);
-@include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-Italic', 400, mono, otf);
-@include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-SemiBold', 600, mono, otf);
-@include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-SemiBoldItalic', 600, mono, otf);
-@include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-Bold', 800, mono, otf);
-@include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-BoldItalic', 800, mono, otf);
-@include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-Light', 200, mono, otf);
-@include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-LightItalic', 200, mono, otf);
-@include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-SemiLight', 300, mono, otf);
-@include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-SemiLightItalic', 300, mono, otf);
-@include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-ExtraLight', 100, mono, otf);
-@include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-ExtraLightItalic', 100, mono, otf);
+@font-face {
+  font-family: 'Roobert';
+  src: url('/assets/fonts/Roobert/Roobert-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
-h1 {
-   font-display: swap
+@font-face {
+  font-family: 'Roobert';
+  src: url('/assets/fonts/Roobert/Roobert-SemiBold.otf') format('opentype');
+  font-weight: 650;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roobert';
+  src: url('/assets/fonts/Roobert/Roobert-Bold.otf') format('opentype');
+  font-weight: 750;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* @include font-face( DM Serif Display, '~/assets/fonts/DM Serif Display/DMSerifDisplay-Italic', 400, serif, ttf); */
+/* @include font-face( DM Serif Display, '~/assets/fonts/DM Serif Display/DMSerifDisplay-Regular', 400, serif, ttf); */
+
+@font-face {
+  font-family: 'DM Serif Display';
+  src: url('/assets/fonts/DM Serif Display/DMSerifDisplay-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: serif;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Serif Display';
+  src: url('/assets/fonts/DM Serif Display/DMSerifDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: serif;
+  font-display: swap;
+}
+
+
+/* @include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-Regular', 400, mono, otf); */
+/* @include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-Italic', 400, mono, otf);*/
+/* @include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-SemiBold', 600, mono, otf);*/
+/* @include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-SemiBoldItalic', 600, mono, otf);*/
+/* @include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-Bold', 800, mono, otf);*/
+/* @include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-BoldItalic', 800, mono, otf);*/
+/* @include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-Light', 200, mono, otf);*/
+/* @include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-LightItalic', 200, mono, otf);*/
+/* @include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-SemiLight', 300, mono, otf);*/
+/* @include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-SemiLightItalic', 300, mono, otf);*/
+/* @include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-ExtraLight', 100, mono, otf);*/
+/* @include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-ExtraLightItalic', 100, mono, otf);*/
+
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('/assets/fonts/Cascadia Code/CascadiaCode-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: mono;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('/assets/fonts/Cascadia Code/CascadiaCode-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: mono;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('/assets/fonts/Cascadia Code/CascadiaCode-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: mono;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('/assets/fonts/Cascadia Code/CascadiaCode-SemiBoldItalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: mono;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('/assets/fonts/Cascadia Code/CascadiaCode-Bold.otf') format('opentype');
+  font-weight: 800;
+  font-style: mono;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('/assets/fonts/Cascadia Code/CascadiaCode-BoldItalic.otf') format('opentype');
+  font-weight: 800;
+  font-style: mono;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('/assets/fonts/Cascadia Code/CascadiaCode-Light.otf') format('opentype');
+  font-weight: 200;
+  font-style: mono;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('/assets/fonts/Cascadia Code/CascadiaCode-LightItalic.otf') format('opentype');
+  font-weight: 200;
+  font-style: mono;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('/assets/fonts/Cascadia Code/CascadiaCode-SemiLight.otf') format('opentype');
+  font-weight: 300;
+  font-style: mono;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('/assets/fonts/Cascadia Code/CascadiaCode-SemiLightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: mono;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('/assets/fonts/Cascadia Code/CascadiaCode-ExtraLight.otf') format('opentype');
+  font-weight: 100;
+  font-style: mono;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('/assets/fonts/Cascadia Code/CascadiaCode-ExtraLightItalic.otf') format('opentype');
+  font-weight: 100;
+  font-style: mono;
+  font-display: swap;
 }
