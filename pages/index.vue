@@ -10,7 +10,7 @@
         <div class="absolute inset-0 bg-gradient-to-r from-red-600 to-red-900 rounded-lg blur opacity-75 -z-10"></div>
         <!-- Card content -->
         <div class="relative bg-gray-800 p-4 rounded-lg border border-gray-700 shadow-lg">
-          <h2 class="text-lg font-semibold font-serif text-white">{{ card.title }}</h2>
+          <h2 class="text-lg font-medium font-serif text-white">{{ card.title }}</h2>
         </div>
       </div>
     </div>
@@ -23,7 +23,7 @@
             <div class="absolute inset-0 bg-gradient-to-r from-red-600 to-red-900 rounded-lg blur opacity-75"></div>
             <!-- Hero content -->
             <div v-if="activeHero" class="relative z-10 p-6">
-              <h2 class="text-2xl font-bold mb-4 font-serif text-white">{{ activeHero.title }}</h2>
+              <h2 class="text-2xl font-medium mb-4 font-serif text-white">{{ activeHero.title }}</h2>
               <p class="text-gray-300">{{ activeHero.content }}</p>
               <button @click="closeHero" class="mt-4 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
                 Chiudi
