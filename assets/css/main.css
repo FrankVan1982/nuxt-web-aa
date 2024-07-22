@@ -22,3 +22,7 @@
 @include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-SemiLightItalic', 300, mono, otf);
 @include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-ExtraLight', 100, mono, otf);
 @include font-face( Cascadia Code, '~/assets/fonts/Cascadia Code/CascadiaCode-ExtraLightItalic', 100, mono, otf);
+
+h1 {
+   font-display: swap
+}
