@@ -30,12 +30,14 @@ const features = [
 
 <template>
 <Title>Home | {{ title }}</Title>
-  <div class="min-h-screen bg-gray-900 text-white">
+  <div class="min-h-screen bg-slate-50 text-black">
     <Navbar />
     <!-- Hero Section -->
-	<header class="py-20 text-center bg-gray-900">
-      <h1 class="text-6xl font-bold mb-4 text-white">Azienda Agricola<br /><span class="text-red-500" style="font-size:75px">Nuda Terra</span></h1>
-      <p class="text-2xl mb-8 text-gray-300">
+	<br />
+	<br />
+	<header class="py-20 text-center bg-slate-50">
+      <h1 class="text-6xl font-bold mb-4 text-black">Azienda Agricola<br /><span class="font-serif text-red-500 text-7xl">Nuda Terra</span></h1>
+      <p class="text-2xl mb-8 text-slate-600">
         Vendiamo olio e vino di produzione propria.
       </p>
 	  <br />
@@ -44,8 +46,8 @@ const features = [
         <a href="/index" class="bg-gray-200 text-gray-800 px-6 py-3 rounded-full font-bold hover:bg-gray-400 transition-colors duration-300">Ordina da noi</a>
       </div>
     </header>
-    <header class="py-20 text-center bg-slate-800 text-white">
-      <h1 class="text-6xl font-bold mb-4 text-white">Vendiamo prodotti</h1>
+    <header class="py-20 text-center bg-slate-200 text-black">
+      <h1 class="text-6xl font-bold mb-4 text-black">Vendiamo prodotti</h1>
       <h2 class="text-6xl font-bold mb-12 text-red-500 relative">
         genuini e di qualità
       </h2>

@@ -10,14 +10,14 @@ module.exports = {
   ],
   theme: {
 	fontFamily: {
-      sans: ["Roobert"],
+      sans: ["Metropolis"],
       serif: ["DM Serif Display"],
       mono: ["Cascadia Code"],
       display: ["DM Serif Display"],
-      body: ["Roobert"]
+      body: ["Metropolis"],
+	  italic: ["Metropolis Italic"]
     },  
     extend: {},
   },
   plugins: [],
 }
-
